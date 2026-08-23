@@ -1,0 +1,692 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Houssem Jemai | Développeur Full-Stack & IoT</title>
+<meta name="description" content="Portfolio de Houssem Jemai, développeur Full-Stack & IoT Junior spécialisé en Spring Boot, Flutter, IoT, APIs, Cloud et systèmes embarqués.">
+
+<!-- Open Graph -->
+<meta property="og:title" content="Houssem Jemai | Développeur Full-Stack & IoT">
+<meta property="og:description" content="Développeur Full-Stack & IoT Junior — Spring Boot, Flutter, IoT, APIs, Cloud, sécurité. Basé à Bizerte, Tunisie.">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="fr_FR">
+
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><rect width=%22100%22 height=%22100%22 rx=%2224%22 fill=%22%230A0D12%22/><text x=%2250%22 y=%2266%22 font-size=%2254%22 text-anchor=%22middle%22 fill=%22%233FE0C5%22 font-family=%22monospace%22>H</text></svg>">
+
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<a href="#main" class="skip-link">Aller au contenu principal</a>
+
+<!-- ==========================================================================
+     NAVBAR
+     ========================================================================== -->
+<header id="navbar">
+  <div class="nav-inner">
+    <a href="#hero" class="brand"><span class="brand-mark">HJ</span> Houssem Jemai</a>
+
+    <nav class="nav-links" aria-label="Navigation principale">
+      <a href="#hero" data-nav>Accueil</a>
+      <a href="#about" data-nav>À propos</a>
+      <a href="#skills" data-nav>Compétences</a>
+      <a href="#projects" data-nav>Projets</a>
+      <a href="#experience" data-nav>Expérience</a>
+      <a href="#education" data-nav>Formation</a>
+      <a href="#contact" data-nav>Contact</a>
+    </nav>
+
+    <div class="nav-actions">
+      <a href="https://github.com/macModa" target="_blank" rel="noopener" class="icon-btn" aria-label="GitHub" title="GitHub">
+        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 .5C5.6.5.5 5.6.5 12c0 5.1 3.3 9.4 7.9 11 .6.1.8-.3.8-.6v-2.1c-3.2.7-3.9-1.5-3.9-1.5-.5-1.3-1.3-1.7-1.3-1.7-1.1-.7.1-.7.1-.7 1.2.1 1.8 1.2 1.8 1.2 1 1.8 2.7 1.3 3.4 1 .1-.8.4-1.3.7-1.6-2.6-.3-5.3-1.3-5.3-5.7 0-1.3.5-2.3 1.2-3.1-.1-.3-.5-1.5.1-3.1 0 0 1-.3 3.3 1.2a11.5 11.5 0 0 1 6 0c2.3-1.5 3.3-1.2 3.3-1.2.6 1.6.2 2.8.1 3.1.8.8 1.2 1.9 1.2 3.1 0 4.4-2.7 5.4-5.3 5.7.4.4.8 1.1.8 2.2v3.3c0 .3.2.7.8.6 4.6-1.6 7.9-5.9 7.9-11C23.5 5.6 18.4.5 12 .5z"/></svg>
+      </a>
+      <button class="icon-btn" id="theme-toggle" aria-label="Changer de thème clair/sombre" title="Thème clair/sombre">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" id="theme-icon"><path d="M21 12.8A9 9 0 1 1 11.2 3 7 7 0 0 0 21 12.8Z"/></svg>
+      </button>
+      <a href="assets/CV_Houssem_Jemai.pdf" download class="btn btn-primary btn-sm">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M12 3v13m0 0-4-4m4 4 4-4M5 21h14"/></svg>
+        <span class="label">CV</span>
+      </a>
+      <button class="hamburger" id="hamburger" aria-label="Ouvrir le menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+
+  <div class="mobile-panel" id="mobile-panel">
+    <a href="#hero" data-nav>Accueil</a>
+    <a href="#about" data-nav>À propos</a>
+    <a href="#skills" data-nav>Compétences</a>
+    <a href="#projects" data-nav>Projets</a>
+    <a href="#experience" data-nav>Expérience</a>
+    <a href="#education" data-nav>Formation</a>
+    <a href="#contact" data-nav>Contact</a>
+    <div class="mobile-actions">
+      <a href="assets/CV_Houssem_Jemai.pdf" download class="btn btn-primary btn-block btn-sm">Télécharger le CV</a>
+      <a href="https://github.com/macModa" target="_blank" rel="noopener" class="btn btn-ghost btn-sm">GitHub</a>
+    </div>
+  </div>
+</header>
+
+<main id="main">
+
+<!-- ==========================================================================
+     HERO
+     ========================================================================== -->
+<section id="hero">
+  <div class="hero-bg" aria-hidden="true"></div>
+  <div class="hero-grid" aria-hidden="true"></div>
+
+  <div class="container hero-inner">
+    <div class="hero-copy">
+      <div class="hero-kicker"><span class="pulse"></span> DISPONIBLE POUR STAGE · ALTERNANCE · POSTE JUNIOR</div>
+      <h1 class="hero-name">Houssem<br><span class="accent">Jemai</span></h1>
+      <p class="hero-role" id="typing-role">Développeur Full-Stack &amp; IoT Junior<span class="cursor">&nbsp;</span></p>
+      <p class="hero-tagline">Je conçois des applications, API et systèmes IoT fiables, sécurisés et orientés vers des problématiques réelles.</p>
+
+      <div class="hero-cta">
+        <a href="#projects" class="btn btn-primary">
+          Voir mes projets
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M5 12h14m0 0-6-6m6 6-6 6"/></svg>
+        </a>
+        <a href="#contact" class="btn btn-outline-amber">Me contacter</a>
+      </div>
+
+      <div class="hero-socials">
+        <a href="https://github.com/macModa" target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 .5C5.6.5.5 5.6.5 12c0 5.1 3.3 9.4 7.9 11 .6.1.8-.3.8-.6v-2.1c-3.2.7-3.9-1.5-3.9-1.5-.5-1.3-1.3-1.7-1.3-1.7-1.1-.7.1-.7.1-.7 1.2.1 1.8 1.2 1.8 1.2 1 1.8 2.7 1.3 3.4 1 .1-.8.4-1.3.7-1.6-2.6-.3-5.3-1.3-5.3-5.7 0-1.3.5-2.3 1.2-3.1-.1-.3-.5-1.5.1-3.1 0 0 1-.3 3.3 1.2a11.5 11.5 0 0 1 6 0c2.3-1.5 3.3-1.2 3.3-1.2.6 1.6.2 2.8.1 3.1.8.8 1.2 1.9 1.2 3.1 0 4.4-2.7 5.4-5.3 5.7.4.4.8 1.1.8 2.2v3.3c0 .3.2.7.8.6 4.6-1.6 7.9-5.9 7.9-11C23.5 5.6 18.4.5 12 .5z"/></svg>
+          github.com/macModa
+        </a>
+        <a href="https://www.linkedin.com/in/jemai-houssem-04754240b/" target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M20.4 20.4h-3.6v-5.6c0-1.3 0-3-1.9-3s-2.1 1.4-2.1 2.9v5.7H9.2V9h3.5v1.6h.1c.5-.9 1.7-1.9 3.4-1.9 3.6 0 4.3 2.4 4.3 5.5v6.2zM5.3 7.4A2.1 2.1 0 1 1 5.3 3.2a2.1 2.1 0 0 1 0 4.2zM7.1 20.4H3.5V9h3.6v11.4z"/></svg>
+          jemai-houssem
+        </a>
+        <a href="mailto:jmihoussem552@gmail.com">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m2 7 10 6 10-6"/></svg>
+          Email
+        </a>
+      </div>
+    </div>
+
+    <div class="hero-visual" aria-hidden="true">
+      <div class="stack-card">
+        <div class="stack-trace-line"></div>
+        <div class="stack-title"><span>architecture.stack</span><span>live</span></div>
+        <div class="stack-layer l1"><span class="dot"></span> <b>Flutter</b> — Mobile UI <span class="tag">Riverpod</span></div>
+        <div class="stack-layer l2"><span class="dot"></span> <b>REST API</b> — Spring Boot <span class="tag">JWT</span></div>
+        <div class="stack-layer l3"><span class="dot"></span> <b>Service Layer</b> — Logique métier <span class="tag">RBAC</span></div>
+        <div class="stack-layer l4"><span class="dot"></span> <b>MySQL</b> — Persistance <span class="tag">JPA</span></div>
+        <div class="stack-layer l5"><span class="dot"></span> <b>ESP32 / MQTT</b> — IoT <span class="tag">Cloud</span></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="scroll-hint" aria-hidden="true"><span>SCROLL</span><span class="line"></span></div>
+</section>
+
+<!-- ==========================================================================
+     ABOUT
+     ========================================================================== -->
+<section id="about" class="section">
+  <div class="container section-inner">
+    <div class="about-grid">
+      <div class="reveal">
+        <div class="about-photo-wrap">
+          <div class="about-photo"><img src="assets/houssem-photo.png" alt="Photo de Houssem Jemai" loading="lazy" width="400" height="400"></div>
+          <div class="about-badge">Bizerte<br><b>Tunisie</b></div>
+        </div>
+      </div>
+
+      <div>
+        <div class="eyebrow reveal">À propos</div>
+        <h2 class="section-title reveal reveal-delay-1">Un développeur qui construit<br>des systèmes de bout en bout.</h2>
+
+        <div class="about-text reveal reveal-delay-2">
+          <p><strong>Étudiant en dernière année de Licence en Technologie Informatique à l'ISET de Bizerte</strong>, spécialisé en développement Full-Stack et IoT. À travers des projets concrets — de la plateforme <strong>M'ArtChez</strong> (rôle de chef de projet technique et développeur principal) aux systèmes IoT ESP32/MQTT avec recommandations assistées par IA — j'ai construit une expérience pratique complète : conception d'API (Spring Boot, Django), applications mobiles (Flutter), firmware embarqué et déploiement (Docker, CI/CD).</p>
+          <p>Je m'intéresse particulièrement aux <strong>architectures backend</strong> robustes, aux <strong>applications mobiles</strong> performantes, à l'<strong>IoT</strong>, au <strong>cloud</strong>, à la <strong>sécurité applicative</strong> et aux pipelines <strong>CI/CD</strong>. Je cherche aujourd'hui un stage, une alternance ou un poste junior pour continuer à construire des solutions fiables et à fort impact.</p>
+        </div>
+
+        <div class="about-focus reveal reveal-delay-3">
+          <div class="focus-pill"><span class="dot" style="background:var(--teal)"></span>Backend</div>
+          <div class="focus-pill"><span class="dot" style="background:#6FA8FF"></span>Mobile</div>
+          <div class="focus-pill"><span class="dot" style="background:var(--amber)"></span>IoT &amp; Embarqué</div>
+          <div class="focus-pill"><span class="dot" style="background:#B98CFF"></span>Cloud &amp; DevOps</div>
+          <div class="focus-pill"><span class="dot" style="background:#67D6A0"></span>Sécurité</div>
+          <div class="focus-pill"><span class="dot" style="background:#E8735C"></span>Conception d'API</div>
+        </div>
+
+        <div class="stats-row reveal reveal-delay-4">
+          <div class="stat-card">
+            <div class="stat-num" data-count="3">0<span class="suffix">+</span></div>
+            <div class="stat-label">Projets Full-Stack &amp; IoT réalisés</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-num" data-count="29">0<span class="suffix">+</span></div>
+            <div class="stat-label">Technologies maîtrisées</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-num" data-count="7">0</div>
+            <div class="stat-label">Sprints Scrum livrés (PFE)</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-num" data-count="82">0<span class="suffix">%</span></div>
+            <div class="stat-label">Couverture de tests (module critique)</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ==========================================================================
+     SKILLS
+     ========================================================================== -->
+<section id="skills" class="section" style="background:var(--bg-elevated)">
+  <div class="container section-inner">
+    <div class="eyebrow amber reveal">Stack technique</div>
+    <h2 class="section-title reveal reveal-delay-1">Compétences &amp; outils</h2>
+    <p class="section-lede reveal reveal-delay-2">Une stack pensée pour construire des systèmes complets — de l'interface mobile jusqu'au capteur, en passant par l'API et le cloud.</p>
+
+    <div class="skills-grid">
+      <div class="skill-card reveal">
+        <div class="skill-card-head">
+          <div class="skill-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="7" rx="1.5"/><rect x="3" y="13" width="18" height="7" rx="1.5"/><circle cx="7" cy="7.5" r=".6" fill="currentColor" stroke="none"/><circle cx="7" cy="16.5" r=".6" fill="currentColor" stroke="none"/></svg></div>
+          <h3>Backend</h3><span class="count">07</span>
+        </div>
+        <div class="skill-tags">
+          <span class="skill-tag">Spring Boot</span><span class="skill-tag">Django</span><span class="skill-tag">Node.js</span>
+          <span class="skill-tag">REST API</span><span class="skill-tag">JWT</span><span class="skill-tag">RBAC</span><span class="skill-tag">BCrypt</span>
+        </div>
+      </div>
+
+      <div class="skill-card reveal reveal-delay-1">
+        <div class="skill-card-head">
+          <div class="skill-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="7" y="2" width="10" height="20" rx="2"/><path d="M11 18h2"/></svg></div>
+          <h3>Mobile</h3><span class="count">05</span>
+        </div>
+        <div class="skill-tags">
+          <span class="skill-tag">Flutter</span><span class="skill-tag">Dart</span><span class="skill-tag">Riverpod</span>
+          <span class="skill-tag">go_router</span><span class="skill-tag">Firebase FCM</span>
+        </div>
+      </div>
+
+      <div class="skill-card reveal reveal-delay-2">
+        <div class="skill-card-head">
+          <div class="skill-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 19a4 4 0 0 1-.6-7.96A5.5 5.5 0 0 1 16 9a4.5 4.5 0 0 1 1 8.9"/><path d="M6 19h11"/></svg></div>
+          <h3>Cloud &amp; DevOps</h3><span class="count">05</span>
+        </div>
+        <div class="skill-tags">
+          <span class="skill-tag">Docker</span><span class="skill-tag">Railway</span><span class="skill-tag">GitHub Actions</span>
+          <span class="skill-tag">CI/CD</span><span class="skill-tag">Cloudinary</span>
+        </div>
+      </div>
+
+      <div class="skill-card reveal">
+        <div class="skill-card-head">
+          <div class="skill-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><ellipse cx="12" cy="5" rx="8" ry="3"/><path d="M4 5v14c0 1.66 3.58 3 8 3s8-1.34 8-3V5"/><path d="M4 12c0 1.66 3.58 3 8 3s8-1.34 8-3"/></svg></div>
+          <h3>Bases de données</h3><span class="count">03</span>
+        </div>
+        <div class="skill-tags">
+          <span class="skill-tag">MySQL</span><span class="skill-tag">MongoDB</span><span class="skill-tag">SQLite</span>
+        </div>
+      </div>
+
+      <div class="skill-card reveal reveal-delay-1">
+        <div class="skill-card-head">
+          <div class="skill-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="9" width="6" height="6"/><path d="M9 2v3M15 2v3M9 19v3M15 19v3M2 9h3M2 15h3M19 9h3M19 15h3"/></svg></div>
+          <h3>IoT &amp; Embarqué</h3><span class="count">05</span>
+        </div>
+        <div class="skill-tags">
+          <span class="skill-tag">ESP32</span><span class="skill-tag">Arduino</span><span class="skill-tag">MQTT</span>
+          <span class="skill-tag">LoRa</span><span class="skill-tag">Raspberry Pi</span>
+        </div>
+      </div>
+
+      <div class="skill-card reveal reveal-delay-2">
+        <div class="skill-card-head">
+          <div class="skill-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2 4 5v6c0 5 3.4 8.7 8 11 4.6-2.3 8-6 8-11V5l-8-3Z"/></svg></div>
+          <h3>Sécurité</h3><span class="count">05</span>
+        </div>
+        <div class="skill-tags">
+          <span class="skill-tag">JWT</span><span class="skill-tag">OTP</span><span class="skill-tag">HMAC-SHA256</span>
+          <span class="skill-tag">Refresh Token Rotation</span><span class="skill-tag">QR Signing</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ==========================================================================
+     PROJECTS
+     ========================================================================== -->
+<section id="projects" class="section">
+  <div class="container section-inner">
+    <div class="eyebrow reveal">Projets</div>
+    <h2 class="section-title reveal reveal-delay-1">Ce que j'ai construit</h2>
+    <p class="section-lede reveal reveal-delay-2">Du projet de fin d'études à mes projets IoT personnels — une approche orientée solutions, du besoin métier jusqu'au déploiement.</p>
+
+    <!-- ===== MAIN PROJECT: M'ArtChez ===== -->
+    <div class="project-hero reveal">
+      <span class="project-flag">
+        <svg width="12" height="12" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2 2 7l10 5 10-5-10-5Zm0 8-8-4v6l8 4 8-4V6l-8 4Z"/></svg>
+        Projet de Fin d'Études — ISET Bizerte × Alder Green Solutions
+      </span>
+
+      <div class="project-title-row">
+        <div>
+          <h3 class="project-title">M'ArtChez</h3>
+          <p class="project-role">Marketplace de valorisation de l'artisanat tunisien · Chef de projet technique &amp; développeur principal</p>
+        </div>
+      </div>
+
+      <p class="project-desc">Marketplace mobile-first connectant directement les artisans tunisiens aux acheteurs. Conçue pour répondre aux limites des plateformes généralistes : intégration native du bon de livraison postal tunisien (CP1), profils artisans dédiés et paiement à la livraison — développée selon Scrum sur <strong>7 sprints / 13 semaines</strong>.</p>
+
+      <div class="project-meta-row">
+        <div class="meta-chip"><span class="v">7</span><span class="k">Sprints Scrum</span></div>
+        <div class="meta-chip"><span class="v">13</span><span class="k">Semaines</span></div>
+        <div class="meta-chip"><span class="v">3</span><span class="k">Rôles RBAC</span></div>
+        <div class="meta-chip"><span class="v">9</span><span class="k">Entités BDD</span></div>
+        <div class="meta-chip"><span class="v">65–82%</span><span class="k">Couverture tests</span></div>
+      </div>
+
+      <div class="tech-row">
+        <span class="tech-chip">Flutter</span><span class="tech-chip">Spring Boot</span><span class="tech-chip">MySQL</span>
+        <span class="tech-chip">Spring Data JPA</span><span class="tech-chip">JWT</span><span class="tech-chip">Spring Security</span>
+        <span class="tech-chip">RBAC</span><span class="tech-chip">Firebase FCM</span><span class="tech-chip">Cloudinary</span>
+        <span class="tech-chip">iTextPDF</span><span class="tech-chip">Docker</span><span class="tech-chip">Railway</span><span class="tech-chip">GitHub Actions</span>
+      </div>
+
+      <div class="feature-grid">
+        <div class="feature-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="m5 13 4 4L19 7"/></svg>Authentification JWT + RBAC (CLIENT / ARTISAN / ADMIN)</div>
+        <div class="feature-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="m5 13 4 4L19 7"/></svg>Profils artisans, catalogue produits &amp; galerie Cloudinary</div>
+        <div class="feature-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="m5 13 4 4L19 7"/></svg>Recherche, filtres, panier &amp; commandes</div>
+        <div class="feature-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="m5 13 4 4L19 7"/></svg>Paiement Cash on Delivery avec confirmation artisan</div>
+        <div class="feature-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="m5 13 4 4L19 7"/></svg>Suivi de commande temps réel (confirmée → expédiée → livrée)</div>
+        <div class="feature-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="m5 13 4 4L19 7"/></svg>Bons de livraison CP1 signés HMAC-SHA256 + QR code</div>
+        <div class="feature-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="m5 13 4 4L19 7"/></svg>Notifications push Firebase (FCM) en temps réel</div>
+        <div class="feature-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="m5 13 4 4L19 7"/></svg>Tableau de bord admin, modération &amp; audit</div>
+        <div class="feature-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="m5 13 4 4L19 7"/></svg>Déploiement Docker + Railway avec CI/CD GitHub Actions</div>
+      </div>
+
+      <div class="project-actions">
+        <button class="collapsible-btn" id="arch-toggle" aria-expanded="false" aria-controls="arch-panel">
+          Architecture technique
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="m6 9 6 6 6-6"/></svg>
+        </button>
+        <button class="collapsible-btn" id="sprint-toggle" aria-expanded="false" aria-controls="sprint-panel">
+          Timeline des 7 sprints
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="m6 9 6 6 6-6"/></svg>
+        </button>
+        <a href="assets/PFE_Houssem_Jemai_Marchi.pdf" target="_blank" rel="noopener" class="btn btn-ghost btn-sm">Voir mon PFE (PDF)</a>
+        <a href="https://github.com/macModa" target="_blank" rel="noopener" class="btn btn-ghost btn-sm">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M12 .5C5.6.5.5 5.6.5 12c0 5.1 3.3 9.4 7.9 11 .6.1.8-.3.8-.6v-2.1c-3.2.7-3.9-1.5-3.9-1.5-.5-1.3-1.3-1.7-1.3-1.7-1.1-.7.1-.7.1-.7 1.2.1 1.8 1.2 1.8 1.2 1 1.8 2.7 1.3 3.4 1 .1-.8.4-1.3.7-1.6-2.6-.3-5.3-1.3-5.3-5.7 0-1.3.5-2.3 1.2-3.1-.1-.3-.5-1.5.1-3.1 0 0 1-.3 3.3 1.2a11.5 11.5 0 0 1 6 0c2.3-1.5 3.3-1.2 3.3-1.2.6 1.6.2 2.8.1 3.1.8.8 1.2 1.9 1.2 3.1 0 4.4-2.7 5.4-5.3 5.7.4.4.8 1.1.8 2.2v3.3c0 .3.2.7.8.6 4.6-1.6 7.9-5.9 7.9-11C23.5 5.6 18.4.5 12 .5z"/></svg>
+          Voir le code
+        </a>
+      </div>
+
+      <!-- Architecture panel -->
+      <div class="collapsible-body" id="arch-panel">
+        <div class="arch-toggle-panel">
+          <div class="arch-flow">
+            <div class="arch-step">Flutter (Riverpod, Dio, go_router)</div>
+            <div class="arch-arrow"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M12 5v14m0 0 6-6m-6 6-6-6"/></svg></div>
+            <div class="arch-step">REST API — Spring Boot (JWT Filter, CORS, @PreAuthorize)</div>
+            <div class="arch-arrow"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M12 5v14m0 0 6-6m-6 6-6-6"/></svg></div>
+            <div class="arch-step">Service Layer — Logique métier, validation, transactions</div>
+            <div class="arch-arrow"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M12 5v14m0 0 6-6m-6 6-6-6"/></svg></div>
+            <div class="arch-step">Repository / JPA — Spring Data, Hibernate</div>
+            <div class="arch-arrow"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M12 5v14m0 0 6-6m-6 6-6-6"/></svg></div>
+            <div class="arch-step">MySQL 8.x — Base de données relationnelle</div>
+          </div>
+          <p style="text-align:center; font-family:var(--font-mono); font-size:11.5px; color:var(--text-dim); text-transform:uppercase; letter-spacing:.08em; margin-bottom:12px;">Services externes consommés par la couche service</p>
+          <div class="arch-externals">
+            <span class="arch-ext-chip">Cloudinary — Images / CDN</span>
+            <span class="arch-ext-chip">Firebase FCM — Notifications</span>
+            <span class="arch-ext-chip">Email (SMTP) — OTP</span>
+            <span class="arch-ext-chip">Railway — Hébergement PaaS</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Sprint timeline panel -->
+      <div class="collapsible-body" id="sprint-panel">
+        <div class="arch-toggle-panel">
+          <div class="sprint-track">
+            <div class="sprint-item"><div class="sn">SPRINT 1</div><div class="st">Authentification &amp; sécurité</div></div>
+            <div class="sprint-item"><div class="sn">SPRINT 2</div><div class="st">Utilisateurs &amp; adresses</div></div>
+            <div class="sprint-item"><div class="sn">SPRINT 3</div><div class="st">Catalogue produits</div></div>
+            <div class="sprint-item"><div class="sn">SPRINT 4</div><div class="st">Marketplace &amp; panier</div></div>
+            <div class="sprint-item"><div class="sn">SPRINT 5</div><div class="st">Commandes &amp; paiement</div></div>
+            <div class="sprint-item"><div class="sn">SPRINT 6</div><div class="st">Livraison CP1</div></div>
+            <div class="sprint-item"><div class="sn">SPRINT 7</div><div class="st">Admin &amp; notifications</div></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ===== SECONDARY PROJECTS ===== -->
+    <div class="projects-secondary">
+      <div class="project-card reveal">
+        <div class="pc-eyebrow">Projet IoT personnel</div>
+        <h3>ESP32 Smart Farm Monitoring System</h3>
+        <p>Pipeline IoT de bout en bout : les capteurs ESP32 publient la télémétrie du sol via MQTT vers un broker EMQX, auto-ingérée dans MongoDB via un backend Django REST Framework. Un moteur d'analyse génère des recommandations d'irrigation assistées par IA, visualisées en temps réel sur un dashboard Flutter — conteneurisé avec Docker et déployé sur Azure.</p>
+        <div class="pipeline-mini">
+          <span class="pnode">ESP32</span><svg viewBox="0 0 24 24" fill="currentColor"><path d="M5 12h12m0 0-4-4m4 4-4 4"/></svg>
+          <span class="pnode">MQTT / EMQX</span><svg viewBox="0 0 24 24" fill="currentColor"><path d="M5 12h12m0 0-4-4m4 4-4 4"/></svg>
+          <span class="pnode">Django REST</span><svg viewBox="0 0 24 24" fill="currentColor"><path d="M5 12h12m0 0-4-4m4 4-4 4"/></svg>
+          <span class="pnode">MongoDB</span><svg viewBox="0 0 24 24" fill="currentColor"><path d="M5 12h12m0 0-4-4m4 4-4 4"/></svg>
+          <span class="pnode">IA irrigation</span><svg viewBox="0 0 24 24" fill="currentColor"><path d="M5 12h12m0 0-4-4m4 4-4 4"/></svg>
+          <span class="pnode">Dashboard Flutter</span>
+        </div>
+        <div class="tech-row">
+          <span class="tech-chip">ESP32</span><span class="tech-chip">MQTT / EMQX</span><span class="tech-chip">Django REST Framework</span>
+          <span class="tech-chip">MongoDB</span><span class="tech-chip">Docker</span><span class="tech-chip">Azure</span><span class="tech-chip">Flutter</span>
+        </div>
+        <div class="project-actions">
+          <a href="https://github.com/macModa" target="_blank" rel="noopener" class="btn btn-ghost btn-sm">Voir le code</a>
+        </div>
+      </div>
+
+      <div class="project-card reveal reveal-delay-1">
+        <div class="pc-eyebrow">Projet IoT personnel</div>
+        <h3>Agricultural IoT Mobile App</h3>
+        <p>Application Flutter connectée à l'IoT pour la surveillance du sol en temps réel, avec déclencheurs d'irrigation automatisés et tableaux de bord d'historique synchronisés via Firebase.</p>
+        <div class="pipeline-mini">
+          <span class="pnode">ESP32</span><svg viewBox="0 0 24 24" fill="currentColor"><path d="M5 12h12m0 0-4-4m4 4-4 4"/></svg>
+          <span class="pnode">EMQX</span><svg viewBox="0 0 24 24" fill="currentColor"><path d="M5 12h12m0 0-4-4m4 4-4 4"/></svg>
+          <span class="pnode">Firebase</span><svg viewBox="0 0 24 24" fill="currentColor"><path d="M5 12h12m0 0-4-4m4 4-4 4"/></svg>
+          <span class="pnode">App Flutter</span>
+        </div>
+        <div class="tech-row">
+          <span class="tech-chip">Flutter</span><span class="tech-chip">Firebase</span><span class="tech-chip">ESP32</span><span class="tech-chip">EMQX Broker</span>
+        </div>
+        <div class="project-actions">
+          <a href="https://github.com/macModa" target="_blank" rel="noopener" class="btn btn-ghost btn-sm">Voir le code</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ==========================================================================
+     EXPERIENCE
+     ========================================================================== -->
+<section id="experience" class="section" style="background:var(--bg-elevated)">
+  <div class="container section-inner">
+    <div class="eyebrow amber reveal">Parcours</div>
+    <h2 class="section-title reveal reveal-delay-1">Expérience</h2>
+    <p class="section-lede reveal reveal-delay-2">Trois stages, trois environnements différents — du développement produit à l'exploitation réseau.</p>
+
+    <div class="timeline">
+      <div class="timeline-item reveal">
+        <div class="timeline-dot"></div>
+        <div class="timeline-card">
+          <h3 class="timeline-role">Stagiaire PFE — Développeur Full-Stack</h3>
+          <div class="timeline-org">Alder Green Solutions · Bizerte</div>
+          <ul>
+            <li>Développement du MVP de la plateforme M'ArtChez : authentification sécurisée par JWT</li>
+            <li>Gestion des rôles RBAC multi-rôles (client / artisan / admin)</li>
+            <li>Notifications push en temps réel via Firebase Cloud Messaging</li>
+            <li>Génération de QR codes pour les bons de livraison sécurisés</li>
+            <li>Architecture backend Spring Boot &amp; développement mobile Flutter</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="timeline-item past reveal reveal-delay-1">
+        <div class="timeline-dot"></div>
+        <div class="timeline-card">
+          <h3 class="timeline-role">Stagiaire Exploitation Réseau</h3>
+          <div class="timeline-org">Tunisie Telecom · Bizerte</div>
+          <ul>
+            <li>Interventions sur l'infrastructure réseau</li>
+            <li>Opérations de maintenance et diagnostics de pannes télécom</li>
+            <li>Travail sur des systèmes de production en direct</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="timeline-item past reveal reveal-delay-2">
+        <div class="timeline-dot"></div>
+        <div class="timeline-card">
+          <h3 class="timeline-role">Stagiaire Initiation Technique</h3>
+          <div class="timeline-org">Poste Tunisienne · Sejnane</div>
+          <ul>
+            <li>Observation et documentation des processus techniques internes</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ==========================================================================
+     ARCHITECTURE / EXPERTISE
+     ========================================================================== -->
+<section id="architecture" class="section arch-section">
+  <div class="container section-inner">
+    <div class="eyebrow reveal">Expertise transversale</div>
+    <h2 class="section-title reveal reveal-delay-1">Je construis des systèmes complets.</h2>
+    <p class="section-lede reveal reveal-delay-2">De l'interface mobile jusqu'au capteur physique — chaque couche de la chaîne technique, maîtrisée et sécurisée.</p>
+
+    <div class="arch-visual reveal">
+      <div class="arch-layer-card">
+        <div class="al-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="7" y="2" width="10" height="20" rx="2"/></svg></div>
+        <h4>Frontend</h4><p>Flutter / Mobile</p>
+      </div>
+      <div class="arch-connector desktop"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M5 12h12m0 0-4-4m4 4-4 4"/></svg></div>
+      <div class="arch-connector mobile"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 5v12m0 0-4-4m4 4 4-4"/></svg></div>
+
+      <div class="arch-layer-card">
+        <div class="al-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="7" rx="1.5"/><rect x="3" y="13" width="18" height="7" rx="1.5"/></svg></div>
+        <h4>API</h4><p>Spring Boot / Django</p>
+      </div>
+      <div class="arch-connector desktop"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M5 12h12m0 0-4-4m4 4-4 4"/></svg></div>
+      <div class="arch-connector mobile"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 5v12m0 0-4-4m4 4 4-4"/></svg></div>
+
+      <div class="arch-layer-card">
+        <div class="al-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2 4 5v6c0 5 3.4 8.7 8 11 4.6-2.3 8-6 8-11V5l-8-3Z"/></svg></div>
+        <h4>Sécurité</h4><p>JWT / RBAC / OTP</p>
+      </div>
+      <div class="arch-connector desktop"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M5 12h12m0 0-4-4m4 4-4 4"/></svg></div>
+      <div class="arch-connector mobile"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 5v12m0 0-4-4m4 4 4-4"/></svg></div>
+
+      <div class="arch-layer-card">
+        <div class="al-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16v4H4zM4 10h10v4H4zM4 16h13v4H4z"/></svg></div>
+        <h4>Logique métier</h4><p>Services / Transactions</p>
+      </div>
+      <div class="arch-connector desktop"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M5 12h12m0 0-4-4m4 4-4 4"/></svg></div>
+      <div class="arch-connector mobile"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 5v12m0 0-4-4m4 4 4-4"/></svg></div>
+
+      <div class="arch-layer-card">
+        <div class="al-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><ellipse cx="12" cy="5" rx="8" ry="3"/><path d="M4 5v14c0 1.66 3.58 3 8 3s8-1.34 8-3V5"/></svg></div>
+        <h4>Données</h4><p>MySQL / MongoDB</p>
+      </div>
+      <div class="arch-connector desktop"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M5 12h12m0 0-4-4m4 4-4 4"/></svg></div>
+      <div class="arch-connector mobile"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 5v12m0 0-4-4m4 4 4-4"/></svg></div>
+
+      <div class="arch-layer-card">
+        <div class="al-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 19a4 4 0 0 1-.6-7.96A5.5 5.5 0 0 1 16 9a4.5 4.5 0 0 1 1 8.9"/></svg></div>
+        <h4>Cloud</h4><p>Docker / Railway / Azure</p>
+      </div>
+      <div class="arch-connector desktop"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M5 12h12m0 0-4-4m4 4-4 4"/></svg></div>
+      <div class="arch-connector mobile"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 5v12m0 0-4-4m4 4 4-4"/></svg></div>
+
+      <div class="arch-layer-card">
+        <div class="al-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="9" width="6" height="6"/><path d="M9 2v3M15 2v3M9 19v3M15 19v3M2 9h3M2 15h3M19 9h3M19 15h3"/></svg></div>
+        <h4>IoT</h4><p>ESP32 / MQTT / Capteurs</p>
+      </div>
+    </div>
+
+    <p class="arch-note reveal">Cette maîtrise de bout en bout — de l'interface Flutter jusqu'au capteur ESP32 — me permet de comprendre l'impact de chaque décision technique sur l'ensemble du système, et de proposer des solutions cohérentes plutôt que des correctifs isolés.</p>
+  </div>
+</section>
+
+<!-- ==========================================================================
+     METHODOLOGY
+     ========================================================================== -->
+<section id="methodology" class="section">
+  <div class="container section-inner">
+    <div class="eyebrow amber reveal">Méthode</div>
+    <h2 class="section-title reveal reveal-delay-1">Ma façon de travailler</h2>
+
+    <div class="method-flow reveal">
+      <div class="method-step"><div class="ms-index">01</div><h4>Analyse des besoins</h4></div>
+      <div class="method-step"><div class="ms-index">02</div><h4>Architecture</h4></div>
+      <div class="method-step"><div class="ms-index">03</div><h4>Développement</h4></div>
+      <div class="method-step"><div class="ms-index">04</div><h4>Tests</h4></div>
+      <div class="method-step"><div class="ms-index">05</div><h4>Code Review</h4></div>
+      <div class="method-step"><div class="ms-index">06</div><h4>CI/CD</h4></div>
+      <div class="method-step"><div class="ms-index">07</div><h4>Déploiement</h4></div>
+      <div class="method-step"><div class="ms-index">08</div><h4>Amélioration continue</h4></div>
+    </div>
+
+    <div class="method-scrum-note reveal">
+      <strong>Méthodologie Scrum</strong>
+      <span>Sur M'ArtChez / Marchi, ce cycle a été appliqué sur 7 sprints et 13 semaines, avec planning, daily stand-up, review et rétrospective à chaque itération.</span>
+    </div>
+  </div>
+</section>
+
+<!-- ==========================================================================
+     EDUCATION
+     ========================================================================== -->
+<section id="education" class="section" style="background:var(--bg-elevated)">
+  <div class="container section-inner">
+    <div class="eyebrow reveal">Parcours académique</div>
+    <h2 class="section-title reveal reveal-delay-1">Formation</h2>
+
+    <div class="edu-timeline reveal">
+      <div class="edu-item">
+        <div class="edu-year">2023 — 2026</div>
+        <div>
+          <h4>Licence en Technologie Informatique</h4>
+          <p>ISET Bizerte — Spécialisation Développement Full-Stack &amp; IoT</p>
+        </div>
+      </div>
+      <div class="edu-item">
+        <div class="edu-year">2023</div>
+        <div>
+          <h4>Baccalauréat</h4>
+          <p>Tunisie</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ==========================================================================
+     LANGUAGES
+     ========================================================================== -->
+<section id="languages" class="section">
+  <div class="container section-inner">
+    <div class="eyebrow amber reveal">Langues</div>
+    <h2 class="section-title reveal reveal-delay-1">Communication</h2>
+
+    <div class="lang-grid reveal">
+      <div class="lang-card">
+        <h4>Arabe</h4>
+        <div class="lvl">Langue maternelle</div>
+        <div class="lang-bar"><div class="lang-bar-fill" data-level="100"></div></div>
+      </div>
+      <div class="lang-card">
+        <h4>Français</h4>
+        <div class="lvl">Niveau B2</div>
+        <div class="lang-bar"><div class="lang-bar-fill" data-level="75"></div></div>
+      </div>
+      <div class="lang-card">
+        <h4>Anglais</h4>
+        <div class="lvl">Niveau B1/B2</div>
+        <div class="lang-bar"><div class="lang-bar-fill" data-level="65"></div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ==========================================================================
+     CONTACT
+     ========================================================================== -->
+<section id="contact" class="section" style="background:var(--bg-elevated)">
+  <div class="container section-inner">
+    <div class="eyebrow reveal">Contact</div>
+    <h2 class="section-title reveal reveal-delay-1">Construisons quelque chose ensemble.</h2>
+    <p class="section-lede reveal reveal-delay-2">Je suis actuellement à la recherche d'un stage, d'une alternance ou d'une opportunité junior en développement Full-Stack, mobile ou IoT.</p>
+
+    <div class="contact-grid">
+      <div class="reveal">
+        <div class="contact-info-list">
+          <div class="contact-info-item">
+            <div class="ci-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m2 7 10 6 10-6"/></svg></div>
+            <div><div class="ci-k">Email</div><a class="ci-v" href="mailto:jmihoussem552@gmail.com">jmihoussem552@gmail.com</a></div>
+          </div>
+          <div class="contact-info-item">
+            <div class="ci-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6 19.8 19.8 0 0 1-3.1-8.7A2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .3 2 .7 2.9a2 2 0 0 1-.4 2.1L8 10a16 16 0 0 0 6 6l1.3-1.4a2 2 0 0 1 2.1-.4c.9.4 1.9.6 2.9.7a2 2 0 0 1 1.7 2Z"/></svg></div>
+            <div><div class="ci-k">Téléphone</div><a class="ci-v" href="tel:+21654198496">+216 54 198 496</a></div>
+          </div>
+          <div class="contact-info-item">
+            <div class="ci-icon"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 .5C5.6.5.5 5.6.5 12c0 5.1 3.3 9.4 7.9 11 .6.1.8-.3.8-.6v-2.1c-3.2.7-3.9-1.5-3.9-1.5-.5-1.3-1.3-1.7-1.3-1.7-1.1-.7.1-.7.1-.7 1.2.1 1.8 1.2 1.8 1.2 1 1.8 2.7 1.3 3.4 1 .1-.8.4-1.3.7-1.6-2.6-.3-5.3-1.3-5.3-5.7 0-1.3.5-2.3 1.2-3.1-.1-.3-.5-1.5.1-3.1 0 0 1-.3 3.3 1.2a11.5 11.5 0 0 1 6 0c2.3-1.5 3.3-1.2 3.3-1.2.6 1.6.2 2.8.1 3.1.8.8 1.2 1.9 1.2 3.1 0 4.4-2.7 5.4-5.3 5.7.4.4.8 1.1.8 2.2v3.3c0 .3.2.7.8.6 4.6-1.6 7.9-5.9 7.9-11C23.5 5.6 18.4.5 12 .5z"/></svg></div>
+            <div><div class="ci-k">GitHub</div><a class="ci-v" href="https://github.com/macModa" target="_blank" rel="noopener">github.com/macModa</a></div>
+          </div>
+          <div class="contact-info-item">
+            <div class="ci-icon"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M20.4 20.4h-3.6v-5.6c0-1.3 0-3-1.9-3s-2.1 1.4-2.1 2.9v5.7H9.2V9h3.5v1.6h.1c.5-.9 1.7-1.9 3.4-1.9 3.6 0 4.3 2.4 4.3 5.5v6.2zM5.3 7.4A2.1 2.1 0 1 1 5.3 3.2a2.1 2.1 0 0 1 0 4.2zM7.1 20.4H3.5V9h3.6v11.4z"/></svg></div>
+            <div><div class="ci-k">LinkedIn</div><a class="ci-v" href="https://www.linkedin.com/in/jemai-houssem-04754240b/" target="_blank" rel="noopener">jemai-houssem</a></div>
+          </div>
+          <div class="contact-info-item">
+            <div class="ci-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 6-9 12-9 12S3 16 3 10a9 9 0 0 1 18 0Z"/><circle cx="12" cy="10" r="3"/></svg></div>
+            <div><div class="ci-k">Localisation</div><span class="ci-v">Bizerte, Tunisie</span></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="reveal reveal-delay-1">
+        <form class="form-card" id="contact-form" novalidate>
+          <div class="form-row">
+            <label for="f-name">Nom</label>
+            <input type="text" id="f-name" name="name" placeholder="Votre nom complet" required>
+            <span class="err" id="err-name"></span>
+          </div>
+          <div class="form-row">
+            <label for="f-email">Email</label>
+            <input type="email" id="f-email" name="email" placeholder="vous@exemple.com" required>
+            <span class="err" id="err-email"></span>
+          </div>
+          <div class="form-row">
+            <label for="f-subject">Sujet</label>
+            <input type="text" id="f-subject" name="subject" placeholder="Ex : Proposition de stage" required>
+            <span class="err" id="err-subject"></span>
+          </div>
+          <div class="form-row">
+            <label for="f-message">Message</label>
+            <textarea id="f-message" name="message" rows="5" placeholder="Votre message..." required></textarea>
+            <span class="err" id="err-message"></span>
+          </div>
+          <button type="submit" class="btn btn-primary btn-block">Envoyer le message</button>
+          <div class="form-success" id="form-success">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="m5 13 4 4L19 7"/></svg>
+            Message prêt à être envoyé — votre client mail va s'ouvrir.
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<!-- ==========================================================================
+     FOOTER
+     ========================================================================== -->
+<footer>
+  <div class="container footer-inner">
+    <p>© <span id="year"></span> Houssem Jemai — Développeur Full-Stack &amp; IoT. Conçu &amp; codé à Bizerte, Tunisie.</p>
+    <div class="footer-socials">
+      <a href="https://github.com/macModa" target="_blank" rel="noopener" aria-label="GitHub"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 .5C5.6.5.5 5.6.5 12c0 5.1 3.3 9.4 7.9 11 .6.1.8-.3.8-.6v-2.1c-3.2.7-3.9-1.5-3.9-1.5-.5-1.3-1.3-1.7-1.3-1.7-1.1-.7.1-.7.1-.7 1.2.1 1.8 1.2 1.8 1.2 1 1.8 2.7 1.3 3.4 1 .1-.8.4-1.3.7-1.6-2.6-.3-5.3-1.3-5.3-5.7 0-1.3.5-2.3 1.2-3.1-.1-.3-.5-1.5.1-3.1 0 0 1-.3 3.3 1.2a11.5 11.5 0 0 1 6 0c2.3-1.5 3.3-1.2 3.3-1.2.6 1.6.2 2.8.1 3.1.8.8 1.2 1.9 1.2 3.1 0 4.4-2.7 5.4-5.3 5.7.4.4.8 1.1.8 2.2v3.3c0 .3.2.7.8.6 4.6-1.6 7.9-5.9 7.9-11C23.5 5.6 18.4.5 12 .5z"/></svg></a>
+      <a href="https://www.linkedin.com/in/jemai-houssem-04754240b/" target="_blank" rel="noopener" aria-label="LinkedIn"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M20.4 20.4h-3.6v-5.6c0-1.3 0-3-1.9-3s-2.1 1.4-2.1 2.9v5.7H9.2V9h3.5v1.6h.1c.5-.9 1.7-1.9 3.4-1.9 3.6 0 4.3 2.4 4.3 5.5v6.2zM5.3 7.4A2.1 2.1 0 1 1 5.3 3.2a2.1 2.1 0 0 1 0 4.2zM7.1 20.4H3.5V9h3.6v11.4z"/></svg></a>
+      <a href="mailto:jmihoussem552@gmail.com" aria-label="Email"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m2 7 10 6 10-6"/></svg></a>
+    </div>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

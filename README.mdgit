@@ -1,0 +1,2 @@
+"# portfolio"  initgit add .git commit -m "first commit"git branch -M maingit remote add origin https://github.com/macModa/portfolio.gitgit push -u origin main
+"# portfolio"  initgit add .git commit -m "first commit"git branch -M maingit remote add origin macModa/portfolio.gitgit push -u origin main
