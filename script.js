@@ -247,7 +247,7 @@
       const message = fields.message.el.value.trim();
 
       const body = `Nom: ${name}\nEmail: ${email}\n\n${message}`;
-      const mailto = `mailto:jmihoussem552@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+      const mailto = `mailto:houssem.jemai.tech@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
 
       successBox.classList.add('show');
       window.location.href = mailto;
